@@ -1,0 +1,83 @@
+AVERAGE RESULTS ON 50 ITERATION(S)
+------------------------------------------------------------+---------
+|V| = 10, |E| = 50:                                         |
+Serial                                                      | 0.00
+Parallel streams + Global queues + AtomicBoolean array      | 0.40
+Parallel streams + Global queues + AtomicBitmap             | 0.40
+Thread pool + Global queues + AtomicBoolean array           | 1.80
+Thread pool + Global queues + AtomicBitmap                  | 1.40
+Thread pool + Local buffers + AtomicBoolean array           | 1.40
+Thread pool + Local buffers + AtomicBitmap                  | 1.10
+------------------------------------------------------------+---------
+|V| = 100, |E| = 500:                                       |
+Serial                                                      | 0.00
+Parallel streams + Global queues + AtomicBoolean array      | 0.50
+Parallel streams + Global queues + AtomicBitmap             | 0.20
+Thread pool + Global queues + AtomicBoolean array           | 5.30
+Thread pool + Global queues + AtomicBitmap                  | 1.20
+Thread pool + Local buffers + AtomicBoolean array           | 1.00
+Thread pool + Local buffers + AtomicBitmap                  | 5.50
+------------------------------------------------------------+---------
+|V| = 1000, |E| = 5000:                                     |
+Serial                                                      | 0.30
+Parallel streams + Global queues + AtomicBoolean array      | 1.50
+Parallel streams + Global queues + AtomicBitmap             | 1.30
+Thread pool + Global queues + AtomicBoolean array           | 2.00
+Thread pool + Global queues + AtomicBitmap                  | 1.60
+Thread pool + Local buffers + AtomicBoolean array           | 1.50
+Thread pool + Local buffers + AtomicBitmap                  | 1.80
+------------------------------------------------------------+---------
+|V| = 10000, |E| = 50000:                                   |
+Serial                                                      | 3.95
+Parallel streams + Global queues + AtomicBoolean array      | 12.20
+Parallel streams + Global queues + AtomicBitmap             | 9.65
+Thread pool + Global queues + AtomicBoolean array           | 5.35
+Thread pool + Global queues + AtomicBitmap                  | 4.60
+Thread pool + Local buffers + AtomicBoolean array           | 4.05
+Thread pool + Local buffers + AtomicBitmap                  | 3.85
+------------------------------------------------------------+---------
+|V| = 10000, |E| = 100000:                                  |
+Serial                                                      | 3.95
+Parallel streams + Global queues + AtomicBoolean array      | 12.20
+Parallel streams + Global queues + AtomicBitmap             | 9.65
+Thread pool + Global queues + AtomicBoolean array           | 5.35
+Thread pool + Global queues + AtomicBitmap                  | 4.60
+Thread pool + Local buffers + AtomicBoolean array           | 4.05
+Thread pool + Local buffers + AtomicBitmap                  | 3.85
+------------------------------------------------------------+---------
+|V| = 50000, |E| = 1000000:                                 |
+Serial                                                      | 29.10
+Parallel streams + Global queues + AtomicBoolean array      | 74.30
+Parallel streams + Global queues + AtomicBitmap             | 56.10
+Thread pool + Global queues + AtomicBoolean array           | 22.50
+Thread pool + Global queues + AtomicBitmap                  | 18.50
+Thread pool + Local buffers + AtomicBoolean array           | 12.80
+Thread pool + Local buffers + AtomicBitmap                  | 10.60
+------------------------------------------------------------+---------
+|V| = 100000, |E| = 1000000:                                |
+Serial                                                      | 39.20
+Parallel streams + Global queues + AtomicBoolean array      | 75.60
+Parallel streams + Global queues + AtomicBitmap             | 52.30
+Thread pool + Global queues + AtomicBoolean array           | 27.10
+Thread pool + Global queues + AtomicBitmap                  | 25.70
+Thread pool + Local buffers + AtomicBoolean array           | 17.20
+Thread pool + Local buffers + AtomicBitmap                  | 10.90
+------------------------------------------------------------+---------
+|V| = 1000000, |E| = 10000000:                              |
+Serial                                                      | 615.00
+Parallel streams + Global queues + AtomicBoolean array      | 990.80
+Parallel streams + Global queues + AtomicBitmap             | 733.00
+Thread pool + Global queues + AtomicBoolean array           | 511.60
+Thread pool + Global queues + AtomicBitmap                  | 292.30
+Thread pool + Local buffers + AtomicBoolean array           | 414.30
+Thread pool + Local buffers + AtomicBitmap                  | 138.90
+------------------------------------------------------------+---------
+|V| = 2000000, |E| = 14000000:                              |
+Serial                                                      | 1505.00
+Parallel streams + Global queues + AtomicBoolean array      | 2207.80
+Parallel streams + Global queues + AtomicBitmap             | 1752.40
+Thread pool + Global queues + AtomicBoolean array           | 1478.50
+Thread pool + Global queues + AtomicBitmap                  | 1024.60
+Thread pool + Local buffers + AtomicBoolean array           | 1582.40
+Thread pool + Local buffers + AtomicBitmap                  | 696.40
+------------------------------------------------------------+---------

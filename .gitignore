@@ -1,3 +1,5 @@
+jcstress-latest.jar
+.idea
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
