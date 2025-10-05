@@ -64,6 +64,7 @@ public class BFSTest {
 
                 log.info("Executing BFS strategies...");
                 for (BreadthFirstSearch strategy : strategies) {
+                    log.info("Executing {}", strategy.getDescription());
                     executionTime = executeBFSAndGetTime(graph, strategy);
                     statistics.get(sizes[i]).get(strategy).add(executionTime);
                 }
@@ -95,6 +96,10 @@ public class BFSTest {
         boolean[] visited = bfs.execute(graph);
         long endTime = System.currentTimeMillis();
         for (boolean v : visited) {
+            if (!v) {
+                log.error(Arrays.toString(visited));
+                log.error("Error while executing strategy {}", bfs.getDescription());
+            }
             assertTrue(v);
         }
         return endTime - startTime;
